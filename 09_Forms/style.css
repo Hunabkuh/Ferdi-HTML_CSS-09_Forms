@@ -1,0 +1,90 @@
+body {
+    background-image: url(/HTML/09_Forms/Img/body.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    color: rgb(232, 37, 19);
+    text-shadow: 7px 7px 15px rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: rgb(184, 108, 8);
+    display: flex;
+    justify-content: space-between;
+}
+
+img {
+    width: 80px;
+    height: 80px;
+}
+
+form {
+    background-color: rgb(255, 253, 240);
+    opacity: 75%;
+    display: flex;
+    padding: 10px;
+    border: 5px;
+    border-color: yellow;
+    border-style: solid;
+    width: fit-content;
+}
+
+.cont-info-personal {
+    border: 5px;
+    border-style: solid;
+    padding: 10px;
+    margin: 5px;
+}
+
+.cont-estilos-pizza {
+    border: 5px;
+    border-style: solid;
+    padding: 10px;
+    margin: 5px;
+}
+
+.cont-envio {
+    border: 5px;
+    border-style: solid;
+    padding: 10px;
+    margin: 5px;
+}
+
+input {
+    margin: 5px;
+    padding: 5px;
+}
+
+section {
+    border-style: solid;
+    padding: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont-completar {
+    display: flex;
+    border: 5px;
+    border-style: solid;
+    padding: 50px;
+}
+
+.footer {
+    background-image: url(/HTML/09_Forms/Img/footer.avif);
+    background-size: cover;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    margin-top: 5px;
+    text-shadow: 5px 5px 5px rgb(2, 1, 0);
+
+}

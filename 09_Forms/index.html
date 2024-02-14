@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Formulario de contacto</title>
+  </head>
+ <!-- TIENDA CON OPCIONES DE COMPRA
+
+Crea una página de pedidos para una tienda, con diferentes opciones de compra,como por ejemplo, un pizzería, que incluya menús desplegables, y casillas seleccionables cuadradas y redondas:
+
+Desplegable:  Sr/Sra./Otre (+nombre)
+Teléfono -required
+
+Desplegable sabor pizza (al menos 6)
+
+Checkboxes: ingredientes extras (poner al menos 4)
+
+Radio button: enviar a casa / venir a buscar
+
+Puedes añadir un comentario para el cliente (textarea)
+
+Verificar que se envíe por GET y queden registrados los datos por pares clave-valor
+
+Una vez te funcione, prueba las diferentes opciones para estilizar tu formulario: colores, sombras, bordes del input, imagen de fondo de la página, etc. Busca ejemplos en la web para inspirarte! -->
+  <body>
+
+<!-- HEADER -->
+
+    <header>
+      <div><img src="/HTML/09_Forms/Img/leopizza.gif"></div>
+      <div><h1>¡Cowabunga!</h1></div>
+      <div><img src="/HTML/09_Forms/Img/donatello.webp"></div>
+    </header>
+
+<!-- SECTION -->
+
+    <section class="cont-section">
+
+
+      <form action="recibido.html" method="get">
+
+
+        <div class="cont-form">
+
+          <div class="cont-estilos-pizza">
+
+            <fieldset >
+              <legend>Estilos de Pizza</legend>
+                <!-- 4 Quesos -->
+                <label for="estilo1">4 Quesos <img src="/HTML/09_Forms/Img/estilos-pizza/4quesos.png"> </label>
+                <input type="checkbox" id="estilo1" name="estilo1" value="estilo1">
+                <label for="cantidad">--> (Cantidad)</label>
+                <input type="number" id="cantidad" name="cantidad-e1" required><br>
+                <!-- Primavera -->
+
+                <label for="estilo2">Primavera <img src="/HTML/09_Forms/Img/estilos-pizza/Primavera.png"> </label>
+                <input type="checkbox" id="estilo-" name="estilo2" value="estilo2">
+                <label for="cantidad">--> (Cantidad)</label><br>
+                <input type="number" id="cantidad" name="cantidad-e2" required><br>
+                <!-- Omnívora -->
+
+                <label for="estilo3">Omnívora <img src="/HTML/09_Forms/Img/estilos-pizza/Omnivora.png"></label>
+                <input type="checkbox" id="estilo3" name="estilo3" value="estilo3">
+                <label for="cantidad">--> (Cantidad)</label><br>
+                <input type="number" id="cantidad" name="cantidad-e3" required><br>
+
+
+                <br><label for="salseo">Cantidad de salsa: </label>
+                <input type="range" id="salseo" name="salseo" min="0" max="100"><br>
+            </fieldset>
+
+          </div>
+
+<!-- INFO PERSONAL -->
+
+          <div class="cont-info-personal">
+
+            <h4>Datos personales</h4>
+
+            <label for="persona">Título:</label>
+              <select id="persona" name="persona">
+                <option value="sr">Sr.</option>
+                <option value="sra">Sra.</option>
+                <option value="dr">Dr. en Pizzafilia</option>
+              </select><br>
+
+            <label for="nombre">Nombre: </label>
+            <input type="text" placeholder="Escribe tu nombre aquí..." id="nombre" name="nombre"><br>
+
+            <label for="apellido">Apellido: </label>
+            <input type="text" placeholder="Escribe tu apellido aquí..." id="apellido" name="apellido"><br>
+
+            <label for="telefono">Teléfono: </label>
+            <input type="tel" placeholder="Escribe tu teléfono aquí..." id="telefono" name="telefono" required><br>
+
+          </div>
+
+          <div class="cont-envio">
+
+<!-- DATOS DE ENVÍO -->
+
+            <h4>Datos de envío</h4>
+
+            <label for="tipo-entrega">Tipo de Envío</label><br>
+            <label for="domicilio">Domicilio</label>
+            <input type="radio" value="Domicilio" name="tipo-entrega" id="domicilio"><br>
+
+            <label for="recogida">Recogida</label>
+            <input type="radio" value="Recogida" name="tipo-entrega" id="recogida"><br>
+
+            <label for="hora-entrega">¿A qué hora te la llevamos?:<label>
+            <input type="time" id="hora-entrega" name="hora-entrega"><br>
+
+            <label for="coment">Nota para el restaurante: </label>
+            <textarea name="coment" id="coment" cols="50" rows="5">Indícanos cualquier particularidad sobre el envío o si tienes alguna intolerancia alimentaria...</textarea>
+
+<!-- BOTON COMPLETAR -->
+
+          </div class="cont-completar">
+            <div>
+              <br><label for="completar">¿List@ para la explosión de sabor?</label>
+            <input type="submit" name="completar" id="completar" value="A Comer!">
+            <input type="reset" name="reset" id="reset" value="Volver a empezar">
+            </div>
+          </div>
+
+      </form>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+      <div id="cont-div-footer">
+        <div class="div-footer"><h5>(c) 2024 Hunabkuh Design</h5></div>
+        <div class="div-footer"><h5>Términos/Condiciones de uso web</h5></div>
+        <div class="div-footer"><h5>Política de privacidad</h5></div>
+      </div>
+    </footer>
+
+  </body>
+</html>
